@@ -15,12 +15,12 @@ body {
 }
 
 input[type=text], select {
-	width: 55%;
+	width: 7em;
 	padding: 10px;
 	margin: 4px 0;
 	display: inline-block;
 	border: 1px solid #ccc;
-	border-radius: 10px;
+	border-radius: 10%;
 	box-sizing: border-box;
 	
 }
