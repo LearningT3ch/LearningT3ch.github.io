@@ -1,9 +1,14 @@
 body {
 	background-image: url("https://wallpaperscraft.com/image/books_notebooks_watch_pens_pen_67310_1920x1080.jpg");
 	color: rgba(244, 176, 66, 0.9);
+	width: 100%;
+	min-height: 100%;
 }
 
-
+html {
+	width: 100%;
+	min-height: 100%;
+}
 
 #ver1 {
 	display: none;
