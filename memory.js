@@ -115,7 +115,7 @@ function count() {
     setTimeout(function(){ document.getElementById("res2").innerHTML = "2"; }, 1000);
     setTimeout(function(){ document.getElementById("res2").innerHTML = "1"; }, 2000);
 	setTimeout(function(){ document.getElementById("res2").style.display = "none"; 
-    levl();	}, 2300);
+    levl();	}, 3000);
 	
 }
 
