@@ -33,6 +33,7 @@ input[type=text], select {
 	text-decoration: none;
 	display: inline-block;
 	font-size: 1em;
+	margin: 0.7em;
 	
 }
 
