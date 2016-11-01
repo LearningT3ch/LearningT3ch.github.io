@@ -111,11 +111,11 @@ function count() {
     document.getElementById("response").style.display = "none"; 
     setTimeout(function(){ 
 	document.getElementById("res2").style.display = "block"; 
-	document.getElementById("res2").innerHTML = "3"; }, 1000);
-    setTimeout(function(){ document.getElementById("res2").innerHTML = "2"; }, 2000);
-    setTimeout(function(){ document.getElementById("res2").innerHTML = "1"; }, 3000);
+	document.getElementById("res2").innerHTML = "3"; }, 0);
+    setTimeout(function(){ document.getElementById("res2").innerHTML = "2"; }, 1000);
+    setTimeout(function(){ document.getElementById("res2").innerHTML = "1"; }, 2000);
 	setTimeout(function(){ document.getElementById("res2").style.display = "none"; 
-    levl();	}, 4000);
+    levl();	}, 2300);
 	
 }
 
