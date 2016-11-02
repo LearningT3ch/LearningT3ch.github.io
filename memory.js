@@ -9,31 +9,36 @@ var score=0;
 var timePeriodInMs = 1000;
 function numbers() {
 	possible = "0123456789";
+	lev = 3;
+	asdf();
+	w3_close();
 	start();
 }
 function letters() {
 	possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	lev = 3;
+	asdf();
+	w3_close();
 	start();
 }
 
 function combination() {
 	possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234567890123456789";
+	lev = 3;
+	asdf();
+	w3_close();
 	start();
 }
 function main() {
-document.getElementById("start").style.display = "block"; 
-document.getElementById("start1").style.display = "block"; 
-document.getElementById("start2").style.display = "block";
+document.getElementById("panel").style.display = "none";
 document.getElementById("game").style.display = "none";
 document.getElementById("panelx").style.display = "none";	
+document.getElementById("asdfx").style.display = "block";
 }
 function start(){
 document.getElementById("panel").style.display = "block";
 document.getElementById("game").style.display = "none"; 
 document.getElementById("zzz").innerHTML = "Level " + lev / 3; 
-document.getElementById("start").style.display = "none"; 
-document.getElementById("start1").style.display = "none"; 
-document.getElementById("start2").style.display = "none"; 
 }
 function go() {
 text = ""
@@ -103,7 +108,10 @@ document.getElementById("answer").style.display = "none";
 }
 
 function levl(){
+	
 document.getElementById("game").style.display = "block"; 
+document.getElementById("panel").style.display = "none"; 
+
 go();}
 
 function count() {
@@ -126,12 +134,21 @@ function count() {
 		function panelx() {
 		document.getElementById("panelx").style.display = "block"; 
 		document.getElementById("res").innerHTML = "Youre score is: " + score;
-		document.getElementById("start").style.display = "none"; 
-        document.getElementById("start1").style.display = "none"; 
-        document.getElementById("start2").style.display = "none"; 
 		document.getElementById("game").style.display = "none"; 
-		}
-		
-		
+}
 
 
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+	document.getElementById("game").style.display = "none"; 
+	document.getElementById("panel").style.display = "none"; 
+	document.getElementById("panelx").style.display = "none"; 
+}
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+
+function asdf() {
+document.getElementById("asdfx").style.display = "none"; 
+	
+}
