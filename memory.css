@@ -31,14 +31,14 @@ input[type=text], select {
 }
 .button {
 	background-color:  rgba(244, 176, 66, 0.5);
-	border-radius: 20%;
+	border-radius: 1em;
 	color: white;
 	padding: 0.6em 1.2em;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	font-size: 1em;
-	margin: 1em;
+	margin: 0.7em;
 	
 }
 
