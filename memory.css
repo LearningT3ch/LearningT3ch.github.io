@@ -1,9 +1,4 @@
-body {
-	background-image: url("https://wallpaperscraft.com/image/books_notebooks_watch_pens_pen_67310_1920x1080.jpg");
-	color: rgba(244, 176, 66, 0.9);
-	width: 100%;
-	min-height: 100%;
-}
+
 
 html {
 	width: 100%;
@@ -30,7 +25,7 @@ input[type=text], select {
 	
 }
 .button {
-	background-color:  rgba(244, 176, 66, 0.5);
+	background-color:  rgba(0,0,0,0.5);
 	border-radius: 1em;
 	color: white;
 	padding: 0.6em 1.2em;
@@ -43,56 +38,22 @@ input[type=text], select {
 }
 
 input[type=text] {
-	background-color: rgba(222,184,135,0.5); 
+	background-color: rgba(0,0,0,0.1); 
 	font-size: 1.5em; }
 	
 
-#panel {
-  position: absolute;
-  width: 9.375em;
-  height: 5em;
-  z-index: 15;
-   top: 15em;
-  left: -6em;
-  margin: -6.25em 0 0 9.375em;
-  background: rgba(0,0,0,0.2);
-  font-size: 1em;
-  padding: 0.625em;
-  text-align: left;
-  color: rgba(244, 176, 66, 0.9);
-  -webkit-box-shadow: 0.625em 0.625em 0.875em 0em rgba(0,0,0,0.75);
--moz-box-shadow: 0.625em 0.625em 0.875em 0em rgba(0,0,0,0.75);
-box-shadow: 0.625em 0.625em 0.875em 0em rgba(0,0,0,0.75);
-  
-}
-
-#panel {
+#panel, #panelx {
 display: none; } 
  
 #play {
 	display: none;
 }
-#panelx {
-  position: absolute;
-  width: 15.375em;
-  height: 8em;
-  z-index: 15;
-   top: 15em;
-  left: -6em;
-  margin: -6.25em 0 0 9.375em;
-  background: rgba(0,0,0,0.2);
-  font-size: 1em;
-  padding: 0.625em;
-  text-align: left;
-  color: rgba(244, 176, 66, 0.9);
-  -webkit-box-shadow: 0.625em 0.625em 0.875em 0em rgba(0,0,0,0.75);
--moz-box-shadow: 0.625em 0.625em 0.875em 0em rgba(0,0,0,0.75);
-box-shadow: 0.625em 0.625em 0.875em 0em rgba(0,0,0,0.75);
-  
+
 }
 
 #panelx {
-display: none; }
+display: none; 
+}
 
 #titlu {
 	font-size: 2em;
@@ -101,5 +62,14 @@ display: none; }
 
 #change {
 	font-size: 2em;
-	color: rgba(222,184,135,0.7);
+	color: rgba0,0,0,0.7);
 }
+
+#mySidenav{
+	display:none;
+}
+
+#asdfx {
+	display: block;
+}
+
