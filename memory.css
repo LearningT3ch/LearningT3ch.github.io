@@ -53,7 +53,7 @@ input[type=text] {
   height: 5em;
   z-index: 15;
    top: 15em;
-  left: -2em;
+  left: -6em;
   margin: -6.25em 0 0 9.375em;
   background: rgba(0,0,0,0.2);
   font-size: 1em;
@@ -78,7 +78,7 @@ display: none; }
   height: 8em;
   z-index: 15;
    top: 15em;
-  left: -2em;
+  left: -6em;
   margin: -6.25em 0 0 9.375em;
   background: rgba(0,0,0,0.2);
   font-size: 1em;
