@@ -7,16 +7,31 @@ var lev = 3;
 var a;
 var score=0;
 var timePeriodInMs = 1000;
-function numbers() {
+var speed;
+function speed() {
 	possible = "0123456789";
 	lev = 3;
+	timePeriodInMs = 200;
+	speed=1;
+	asdf();
+	w3_close();
+	start();
+}
+
+function numbers() {
+	possible = "0123456789";
+	timePeriodInMs = 1000;
+	lev = 3;
+	speed=0;
 	asdf();
 	w3_close();
 	start();
 }
 function letters() {
 	possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	timePeriodInMs = 1000;
 	lev = 3;
+	speed=0;
 	asdf();
 	w3_close();
 	start();
@@ -29,6 +44,12 @@ function combination() {
 	w3_close();
 	start();
 }
+
+function ress() {
+document.getElementById("panel").style.display = "none";
+document.getElementById("game").style.display = "none";
+document.getElementById("panelx").style.display = "none";
+}
 function main() {
 document.getElementById("panel").style.display = "none";
 document.getElementById("game").style.display = "none";
@@ -38,6 +59,8 @@ document.getElementById("asdfx").style.display = "block";
 function start(){
 document.getElementById("panel").style.display = "block";
 document.getElementById("game").style.display = "none"; 
+document.getElementById("res2").style.display = "none"; 
+document.getElementById("panelx").style.display = "none";	
 document.getElementById("zzz").innerHTML = "Level " + lev / 3; 
 }
 function go() {
@@ -49,6 +72,10 @@ document.getElementById("change").innerHTML = text;
 setTimeout(function() 
 { 
 document.getElementById("change").style.display = "none"; 
+}, 
+timePeriodInMs); 
+setTimeout(function() 
+{ 
 document.getElementById("answer").style.display = "block"; 
 document.getElementById("ver1").style.display = "block"; 
 }, 
@@ -58,34 +85,47 @@ block();
 
 
 function ver() {
-	var a = document.getElementById("answer").value;
+var a = document.getElementById("answer").value;
 
-	if ( a == text) {
+if ( a== text && speed == 1) {
 score = score+ 100;
 p=p+1;
 lev++;
-if (p==3){
+   if (p==3){
+nr++;
+timePeriodInMs = timePeriodInMs + 100;
+p=0;
+document.getElementById("panel").style.display = "block";
+document.getElementById("game").style.display = "none"; 
+document.getElementById("zzz").innerHTML = "Level " + lev / 3;
+} 
+document.getElementById('response').style.color = 'ForestGreen';	
+document.getElementById("response").innerHTML = "Good Job!"; 
+ } else if ( a == text) {
+score = score+ 100;
+p=p+1;
+lev++;
+     if (p==3){
 nr++;
 timePeriodInMs = timePeriodInMs + 250;
 p=0;
 document.getElementById("panel").style.display = "block";
 document.getElementById("game").style.display = "none"; 
 document.getElementById("zzz").innerHTML = "Level " + lev / 3;
-}
+} 
 document.getElementById('response').style.color = 'ForestGreen';	
 document.getElementById("response").innerHTML = "Good Job!"; 
-		
-	} else {	
+} else {	
 g=g+1;
 if (g==3){
 p = 0;
+speed = 0;
 score=score - 300;
 g= 0;
 lev = 3;
 nr=4;
-timePeriodInMs = 3000;
+timePeriodInMs = 1000;
 panelx();
-
 }
 document.getElementById('response').style.color = 'Tomato';		
 document.getElementById("response").innerHTML = "Try Again!";
@@ -95,7 +135,6 @@ document.getElementById("response").innerHTML = "Try Again!";
 
 function block() {
 	document.getElementById("play").style.display = "none";
-	
 	document.getElementById("response").style.display = "none";
 }
 
@@ -109,8 +148,10 @@ document.getElementById("answer").style.display = "none";
 
 function levl(){
 	
-document.getElementById("game").style.display = "block"; 
 document.getElementById("panel").style.display = "none"; 
+document.getElementById("game").style.display = "block"; 
+document.getElementById("panelx").style.display = "none";	
+
 
 go();}
 
