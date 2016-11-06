@@ -7,16 +7,19 @@ var lev = 3;
 var a;
 var score=0;
 var timePeriodInMs = 1000;
-var speed;
-function speed() {
+var speed=0;
+
+
+	function speedtest() {
 	possible = "0123456789";
-	lev = 3;
 	timePeriodInMs = 200;
+	lev = 3;
 	speed=1;
 	asdf();
 	w3_close();
 	start();
 }
+		
 
 function numbers() {
 	possible = "0123456789";
