@@ -9,32 +9,33 @@ var score=0;
 var timePeriodInMs = 1000;
 var speed=0;
 
-
 	function speedtest() {
+	
 	possible = "0123456789";
 	timePeriodInMs = 200;
-	lev = 3;
+	p = 0;
 g= 0;
 score=0;
 lev = 3;
 nr=4;
-	speed=
+	lev = 3;
 	speed=1;
 	asdf();
 	w3_close();
 	start();
 }
 		
-
+	
+	
 function numbers() {
 	possible = "0123456789";
 	timePeriodInMs = 1000;
 	lev = 3;
-	g= 0;
+	p = 0;
+g= 0;
 score=0;
 lev = 3;
 nr=4;
-	
 	speed=0;
 	asdf();
 	w3_close();
@@ -44,7 +45,8 @@ function letters() {
 	possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	timePeriodInMs = 1000;
 	lev = 3;
-	g= 0;
+	p = 0;
+g= 0;
 score=0;
 lev = 3;
 nr=4;
@@ -57,7 +59,8 @@ nr=4;
 function combination() {
 	possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234567890123456789";
 	lev = 3;
-	g= 0;
+	p = 0;
+g= 0;
 score=0;
 lev = 3;
 nr=4;
@@ -89,6 +92,7 @@ text = ""
 for( var i=0; i < nr; i++ )
 text += possible.charAt(Math.floor(Math.random() * possible.length))
 document.getElementById("change").style.display = "block";
+
 document.getElementById("change").innerHTML = text;
 setTimeout(function() 
 { 
@@ -140,11 +144,11 @@ document.getElementById("response").innerHTML = "Good Job!";
 g=g+1;
 if (g==3){
 p = 0;
-speed = 0;
-score=score - 300;
 g= 0;
+score=0;
 lev = 3;
 nr=4;
+speed = 0;
 timePeriodInMs = 1000;
 panelx();
 }
@@ -161,17 +165,18 @@ function block() {
 
 function block1() {
 	document.getElementById("ver1").style.display = "none";
+	document.getElementById("answer").style.display = "none"; 
 	document.getElementById("play").style.display = "block"; 
 	document.getElementById("response").style.display = "block";
 
-document.getElementById("answer").style.display = "none"; 
+
 }
 
 function levl(){
 	
 document.getElementById("panel").style.display = "none"; 
-document.getElementById("game").style.display = "block"; 
-document.getElementById("panelx").style.display = "none";	
+document.getElementById("panelx").style.display = "none";
+document.getElementById("game").style.display = "block"; 	
 
 
 go();}
@@ -179,6 +184,8 @@ go();}
 function count() {
 	document.getElementById("panel").style.display = "none"; 
     document.getElementById("response").style.display = "none"; 
+
+
     setTimeout(function(){ 
 	document.getElementById("res2").style.display = "block"; 
 	document.getElementById("res2").innerHTML = "3"; }, 0);
@@ -186,7 +193,8 @@ function count() {
     setTimeout(function(){ document.getElementById("res2").innerHTML = "1"; }, 2000);
 	setTimeout(function(){ document.getElementById("res2").style.display = "none"; 
 	document.getElementById("ver1").style.display = "none";
-	document.getElementById("answer").style.display = "none"; }, 3000);
+	document.getElementById("answer").style.display = "none"; 
+	document.getElementById("change").style.display = "none"; }, 3000);
 	setTimeout(function(){  levl();	}, 3100);
 	
 }
