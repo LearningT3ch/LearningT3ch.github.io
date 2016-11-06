@@ -145,7 +145,6 @@ g=g+1;
 if (g==3){
 p = 0;
 g= 0;
-score=0;
 lev = 3;
 nr=4;
 speed = 0;
