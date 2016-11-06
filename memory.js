@@ -164,7 +164,9 @@ function count() {
     setTimeout(function(){ document.getElementById("res2").innerHTML = "2"; }, 1000);
     setTimeout(function(){ document.getElementById("res2").innerHTML = "1"; }, 2000);
 	setTimeout(function(){ document.getElementById("res2").style.display = "none"; 
-    levl();	}, 3000);
+	document.getElementById("ver1").style.display = "none";
+	document.getElementById("answer").style.display = "none"; }, 3000);
+	setTimeout(function(){  levl();	}, 3100);
 	
 }
 
