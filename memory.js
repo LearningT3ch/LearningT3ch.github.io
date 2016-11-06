@@ -14,6 +14,11 @@ var speed=0;
 	possible = "0123456789";
 	timePeriodInMs = 200;
 	lev = 3;
+g= 0;
+score=0;
+lev = 3;
+nr=4;
+	speed=
 	speed=1;
 	asdf();
 	w3_close();
@@ -25,6 +30,11 @@ function numbers() {
 	possible = "0123456789";
 	timePeriodInMs = 1000;
 	lev = 3;
+	g= 0;
+score=0;
+lev = 3;
+nr=4;
+	
 	speed=0;
 	asdf();
 	w3_close();
@@ -34,6 +44,10 @@ function letters() {
 	possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	timePeriodInMs = 1000;
 	lev = 3;
+	g= 0;
+score=0;
+lev = 3;
+nr=4;
 	speed=0;
 	asdf();
 	w3_close();
@@ -43,6 +57,10 @@ function letters() {
 function combination() {
 	possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz01234567890123456789";
 	lev = 3;
+	g= 0;
+score=0;
+lev = 3;
+nr=4;
 	asdf();
 	w3_close();
 	start();
