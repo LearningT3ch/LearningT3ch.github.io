@@ -102,8 +102,8 @@ timePeriodInMs);
 setTimeout(function() 
 { 
 document.getElementById("answer").style.display = "block"; 
-document.getElementById("answer").autofocus; 
 document.getElementById("ver1").style.display = "block"; 
+document.getElementById("answer").autofocus; 
 }, 
 timePeriodInMs); 
 block();
