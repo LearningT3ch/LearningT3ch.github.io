@@ -176,7 +176,9 @@ function levl(){
 	
 document.getElementById("panel").style.display = "none"; 
 document.getElementById("panelx").style.display = "none";
-document.getElementById("game").style.display = "block"; 	
+document.getElementById("game").style.display = "block"; 
+document.getElementById("answer").autofocus; 
+
 
 
 go();}
