@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SpeedReading</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>SpeedReading</h1>
+    <button id='menu'>Menu</button>
+    <!-- <button id='play'>Play</button>
+    <button id='pause'>Pause</button> -->
+
+    <div id='get'>
+    <textarea rows='8' cols='65'></textarea></br>
+    <div>
+    <label>WPM: <span  id='wpm-nr'></span></label>
+    <input type="range" name="speed" min="50" max="1200" step="50" value="150" id='wpm'/>
+    <label>WNR: <span  id='wnr-nr'></span></label>
+    <input type="range" name="words" min="1" max="5" step="1" value="1" id='wnr'/>
+    <button id='go'>go</button>
+    </div>
+</div>
+
+    <div id='post'>
+        <p><h1 id='words'></h1></p>
+    </div>
+</body>
+</html>
